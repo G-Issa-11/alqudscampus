@@ -1,0 +1,400 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #31363f;
+  /* height: 100vh;
+  overflow-y: auto; */
+  position: relative;
+  color: #222831;
+}
+
+/* Nav bar & header styling */
+
+header {
+  width: 100%;
+  padding: 12px 25px;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.2);
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .logo img {
+  height: 75px;
+}
+
+header .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header .menu .menu-item {
+  list-style-type: none;
+  margin: 16px;
+  cursor: pointer;
+  transition: 0.6s ease-in-out;
+  position: relative;
+}
+
+header .menu .menu-item a {
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #222831;
+}
+
+header .menu .menu-item::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; /* Position the line beneath the menu item */
+  left: 0;
+  width: 0;
+  height: 2px; /* Adjust the height of the line */
+  background-color: transparent; /* Initially transparent */
+  transition: width 0.6s ease; /* Add transition for smooth effect */
+}
+
+header .menu .menu-item:hover::after {
+  width: 100%;
+  background-color: #b9132a; /* Change the background color on hover */
+}
+
+/* Main body styling */
+
+main {
+}
+
+/* About section styling */
+.about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1 {
+  padding: 10px 8px;
+  border-left: 2px solid #b9132a;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.arrow-button {
+  position: relative;
+  margin: 0;
+  padding: 14px;
+  background: #b9132a;
+  color: white;
+  font-size: 20px;
+  border: none;
+  height: 70px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s ease-in;
+}
+.arrow-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  right: -70px;
+  border-width: 35px;
+  border-color: transparent transparent transparent #b9132a;
+  border-left-color: #b9132a;
+  transition: 0.4s ease-in;
+}
+
+.arrow-button:hover {
+  background-color: #ff6347;
+}
+
+.arrow-button:hover::after {
+  border-color: transparent transparent transparent #ff6347;
+  border-left-color: #ff6347;
+}
+
+.slideshow-container {
+  max-width: 550px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+  /* max-height: 300px; */
+}
+
+.mySlides img {
+  min-height: 60vh;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Contact section styling */
+
+.contact {
+  position: relative;
+  padding: 100px 0;
+}
+
+.red-strip {
+  background-color: #b9132a;
+  /* max-height: 200px; */
+  padding: 25px;
+  position: relative;
+}
+
+.contact-row {
+  color: white;
+  display: grid;
+  grid-template-areas:
+    "icon tag"
+    "icon content";
+  gap: 5px;
+  width: 250px;
+  margin: 20px;
+  margin-left: 100px;
+}
+
+.contact-row i {
+  grid-area: icon;
+  text-align: center;
+  margin: auto;
+  font-size: 25px;
+  width: 20px;
+}
+
+.contact-row h5 {
+  grid-area: tag;
+  font-size: 16px;
+}
+
+.contact-row p {
+  grid-area: content;
+  font-size: 14px;
+}
+
+.contact-box {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  height: 75%;
+  background-color: #fff;
+  /* border: 1px solid #ccc; */
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-box form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact-box h3 {
+  font-size: 23px;
+  color: #222831;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-box button {
+  width: 100%;
+  background-color: #76abae;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-box button:hover {
+  background-color: #659194;
+}
+
+/* Footer styling */
+
+footer {
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 180px;
+  color: white;
+  background-color: #31363f;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+}
+
+footer .upper-footer {
+  padding: 20px;
+}
+
+footer .fa {
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+footer .fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.upper-footer .sm-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.upper-footer .sm-links a {
+  margin: 6px;
+  font-size: 25px;
+}
+
+footer .upper-footer .links ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .upper-footer .links ul li {
+  list-style-type: none;
+  font-size: 16px;
+  margin: 15px;
+  cursor: pointer;
+  transition: 0.4s ease-in;
+}
+
+.links ul li:hover {
+  color: #76abae;
+}
+
+footer .credentials {
+  background-color: #222831;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

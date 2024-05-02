@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <script src="app.js"></script> -->
+    <title>Al-Quds Campus</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="assets/alquds-uni-logo.png" alt="Al-Quds University Logo" />
+        </div>
+        <ul class="menu">
+          <li class="menu-item"><a href="#about">About</a></li>
+          <li class="menu-item"><a href="#contact">Contact Us</a></li>
+          <li class="menu-item"><a href="#">Al-Quds University</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="about" id="about">
+        <div class="about-content">
+          <h1>Al-Quds University Campus</h1>
+          <button class="arrow-button">Go to campus map</button>
+        </div>
+        <div class="carousel">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="assets/campusimg1.jpg" style="width:100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="assets/campusimg2.jpg" style="width:100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="assets/campusimg3.jpg" style="width:100%" />
+            </div>
+          </div>
+          <br />
+
+          <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="red-strip">
+          <div class="contact-row">
+            <i class="fa fa-phone"></i>
+            <h5>Call Us</h5>
+            <p>Lorem ipsum dolor sit.</p>
+          </div>
+          <div class="contact-row">
+            <i class="fa fa-map"></i>
+            <h5>Location</h5>
+            <p>Lorem ipsum dolor sit.</p>
+          </div>
+          <div class="contact-row">
+            <i class="fa fa-envelope"></i>
+            <h5>Email</h5>
+            <p>Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+        <div class="contact-box">
+          <h3>Contact Us</h3>
+          <form action="">
+            <input type="text" name="name" placeholder="Your name" />
+            <input
+              type="Email"
+              name="email"
+              placeholder="Please enter a valid email address"
+            />
+            <textarea
+              name="Message"
+              id=""
+              cols="30"
+              rows="3"
+              placeholder="Your message"
+            ></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="upper-footer">
+        <div class="sm-links">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <div class="links">
+          <ul>
+            <li class="link">Home</li>
+            <li class="link">Contact Us</li>
+            <li class="link">Al-Quds University</li>
+          </ul>
+        </div>
+      </div>
+      <div class="credentials">
+        Copyrights &copy; 2024. Made with &hearts; by Ghada Issa.
+      </div>
+    </footer>
+  </body>
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+</html>
