@@ -30,7 +30,7 @@ var areas = {
       properties: {
         OBJECTID: 7,
         Code: "B11",
-        Building_N: "Medicine",
+        Name: "Medicine",
         Floors_Num: null,
         Building_U: "",
         Staff_Numb: null,
@@ -59,7 +59,7 @@ var areas = {
       properties: {
         OBJECTID: 8,
         Code: "B10",
-        Building_N: "Public Health",
+        Name: "Public Health",
         Floors_Num: null,
         Building_U: "",
         Staff_Numb: null,
@@ -86,7 +86,7 @@ var areas = {
       properties: {
         OBJECTID: 9,
         Code: "",
-        Building_N: "",
+        Name: "",
         Floors_Num: null,
         Building_U: "",
         Staff_Numb: null,
@@ -116,7 +116,7 @@ var areas = {
       properties: {
         OBJECTID: 10,
         Code: "B9",
-        Building_N: "Desntistry",
+        Name: "Desntistry",
         Floors_Num: null,
         Building_U: "",
         Staff_Numb: null,
@@ -144,7 +144,7 @@ var areas = {
       properties: {
         OBJECTID: 11,
         Code: "B8",
-        Building_N: "Farmacy",
+        Name: "Farmacy",
         Floors_Num: null,
         Building_U: "",
         Staff_Numb: null,
@@ -171,7 +171,7 @@ var areas = {
       properties: {
         OBJECTID: 12,
         Code: "B7",
-        Building_N: "Health Professions",
+        Name: "Health Professions",
         Floors_Num: null,
         Building_U: "",
         Staff_Numb: null,
@@ -212,7 +212,7 @@ var areas = {
       properties: {
         OBJECTID: 13,
         Code: "B6",
-        Building_N: "Said Khoury - IT",
+        Name: "Said Khoury - IT",
         Floors_Num: 2,
         Building_U: "Support",
         Staff_Numb: 25,
@@ -242,7 +242,7 @@ var areas = {
       properties: {
         OBJECTID: 14,
         Code: "B5",
-        Building_N: "AlQuds Bard College",
+        Name: "AlQuds Bard College",
         Floors_Num: 3,
         Building_U: "Academic",
         Staff_Numb: 30,
@@ -283,7 +283,7 @@ var areas = {
       properties: {
         OBJECTID: 15,
         Code: "B4",
-        Building_N: "Science Faculty",
+        Name: "Science Faculty",
         Floors_Num: 3,
         Building_U: "Academic",
         Staff_Numb: 50,
@@ -311,7 +311,7 @@ var areas = {
       properties: {
         OBJECTID: 16,
         Code: "B2",
-        Building_N: "Mosque",
+        Name: "Mosque",
         Floors_Num: 1,
         Building_U: "relegious",
         Staff_Numb: 0,
@@ -343,7 +343,7 @@ var areas = {
       properties: {
         OBJECTID: 17,
         Code: "B3",
-        Building_N: "Finance Building",
+        Name: "Finance Building",
         Floors_Num: 2,
         Building_U: "Financial",
         Staff_Numb: 20,
@@ -370,7 +370,7 @@ var areas = {
       properties: {
         OBJECTID: 18,
         Code: "B13",
-        Building_N: "Library",
+        Name: "Library",
         Floors_Num: null,
         Building_U: "",
         Staff_Numb: null,
@@ -398,7 +398,7 @@ var areas = {
       properties: {
         OBJECTID: 19,
         Code: "B12",
-        Building_N: "Graduate Studies",
+        Name: "Graduate Studies",
         Floors_Num: null,
         Building_U: "",
         Staff_Numb: null,
@@ -452,7 +452,7 @@ var areas = {
       properties: {
         OBJECTID: 21,
         Code: "B15",
-        Building_N: "Faculty of Ats",
+        Name: "Faculty of Ats",
         Floors_Num: null,
         Building_U: "",
         Staff_Numb: null,
@@ -487,7 +487,7 @@ var areas = {
       properties: {
         OBJECTID: 22,
         Code: "B14",
-        Building_N: "Student Activities",
+        Name: "Student Activities",
         Floors_Num: null,
         Building_U: "",
         Staff_Numb: null,
@@ -525,7 +525,7 @@ var areas = {
       properties: {
         OBJECTID: 23,
         Code: "B1",
-        Building_N: "Outer northern grandstand",
+        Name: "Outer northern grandstand",
         Floors_Num: 0,
         Building_U: "Stadium",
         Staff_Numb: 0,
@@ -557,7 +557,7 @@ var areas = {
       properties: {
         OBJECTID: 25,
         Code: "B16",
-        Building_N: "Law Faculty",
+        Name: "Law Faculty",
         Floors_Num: null,
         Building_U: "",
         Staff_Numb: null,
@@ -590,7 +590,7 @@ var areas = {
       properties: {
         OBJECTID: 27,
         Code: "B18",
-        Building_N: "Abu Jihad",
+        Name: "Abu Jihad",
         Floors_Num: null,
         Building_U: "",
         Staff_Numb: null,
@@ -626,7 +626,7 @@ var areas = {
       properties: {
         OBJECTID: 28,
         Code: "B19",
-        Building_N: "Institue of Archeology",
+        Name: "Institue of Archeology",
         Floors_Num: null,
         Building_U: "",
         Staff_Numb: null,
@@ -656,7 +656,7 @@ var areas = {
       properties: {
         OBJECTID: 29,
         Code: "B17",
-        Building_N: "Development",
+        Name: "Development",
         Floors_Num: null,
         Building_U: "",
         Staff_Numb: null,
@@ -694,7 +694,7 @@ var areas = {
       properties: {
         OBJECTID: 32,
         Code: "B20",
-        Building_N: "Math Musuem",
+        Name: "Math Musuem",
         Floors_Num: null,
         Building_U: "",
         Staff_Numb: null,
@@ -729,7 +729,7 @@ var areas = {
         type: "Point",
         coordinates: [35.2598512326944, 31.75573517865084]
       },
-      properties: { OBJECTID: 1, Code: "g1", Gate_Name: "", Location: "" }
+      properties: { OBJECTID: 1, Code: "g1", Name: "", Location: "" }
     },
     {
       type: "Feature",
@@ -737,7 +737,7 @@ var areas = {
         type: "Point",
         coordinates: [35.25951524377032, 31.754548452434726]
       },
-      properties: { OBJECTID: 2, Code: "g2", Gate_Name: "", Location: "" }
+      properties: { OBJECTID: 2, Code: "g2", Name: "", Location: "" }
     },
     {
       type: "Feature",
@@ -745,7 +745,7 @@ var areas = {
         type: "Point",
         coordinates: [35.26069314245627, 31.757435538577234]
       },
-      properties: { OBJECTID: 3, Code: "g3", Gate_Name: "", Location: "" }
+      properties: { OBJECTID: 3, Code: "g3", Name: "", Location: "" }
     },
     {
       type: "Feature",
@@ -753,7 +753,7 @@ var areas = {
         type: "Point",
         coordinates: [35.262597857173624, 31.756438807642308]
       },
-      properties: { OBJECTID: 4, Code: "g4", Gate_Name: "", Location: "" }
+      properties: { OBJECTID: 4, Code: "g4", Name: "", Location: "" }
     },
     {
       type: "Feature",
@@ -761,7 +761,7 @@ var areas = {
         type: "Point",
         coordinates: [35.259861615654195, 31.755294076647957]
       },
-      properties: { OBJECTID: 5, Code: "g5", Gate_Name: "", Location: "" }
+      properties: { OBJECTID: 5, Code: "g5", Name: "", Location: "" }
     },
 
     // open spaces
@@ -769,7 +769,8 @@ var areas = {
       type: "Feature",
       properties: {
         Code: "O1",
-        Type: "Open Space"
+        Type: "Open Space",
+        Name: "un"
       },
       geometry: {
         type: "Polygon",
@@ -849,7 +850,8 @@ var areas = {
       type: "Feature",
       properties: {
         Code: "O2",
-        Type: "Open Space"
+        Type: "Open Space",
+        Name: "unkown"
       },
       geometry: {
         coordinates: [
