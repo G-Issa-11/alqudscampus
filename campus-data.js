@@ -29,14 +29,14 @@ var areas = {
       },
       properties: {
         OBJECTID: 7,
-        Code: "B11",
-        Name: "Medicine",
-        Floors_Num: null,
-        Building_U: "",
-        Staff_Numb: null,
-        Student_Nu: null,
-        Dean_Name: "",
-        Color: "magenta",
+        code: "B11",
+        name: "Medicine",
+        floorsNumber: 3,
+        buidlingUse: "Academic",
+        staffNumber: 120,
+        studentsNumber: 2233,
+        deanName: "Hani Abdeen",
+        imgSrc: "assets/med.jpeg",
         SHAPE_Leng: 140.79437,
         SHAPE_Area: 1051.349906
       }
@@ -58,14 +58,14 @@ var areas = {
       },
       properties: {
         OBJECTID: 8,
-        Code: "B10",
-        Name: "Public Health",
-        Floors_Num: null,
-        Building_U: "",
-        Staff_Numb: null,
-        Student_Nu: null,
-        Dean_Name: "",
-        Color: "orange",
+        code: "B10",
+        name: "Public Health",
+        floorsNumber: null,
+        buidlingUse: "Academic",
+        staffNumber: null,
+        studentsNumber: null,
+        deanName: "Hazim Agha",
+        imgSrc: "assets/public-health.jpeg",
         SHAPE_Leng: 84.024631,
         SHAPE_Area: 407.932465
       }
@@ -86,7 +86,7 @@ var areas = {
       properties: {
         OBJECTID: 9,
         Code: "",
-        Name: "",
+        name: "??",
         Floors_Num: null,
         Building_U: "",
         Staff_Numb: null,
@@ -115,13 +115,14 @@ var areas = {
       },
       properties: {
         OBJECTID: 10,
-        Code: "B9",
-        Name: "Desntistry",
-        Floors_Num: null,
-        Building_U: "",
-        Staff_Numb: null,
-        Student_Nu: null,
-        Dean_Name: "",
+        code: "B9",
+        name: "Desntistry",
+        floorsNumber: null,
+        buidlingUse: "Academic",
+        staffNumber: null,
+        studentsNumber: null,
+        deanName: "Ahmad Amro",
+        imgSrc: null,
         SHAPE_Leng: 125.063828,
         SHAPE_Area: 857.741299
       }
@@ -143,13 +144,14 @@ var areas = {
       },
       properties: {
         OBJECTID: 11,
-        Code: "B8",
-        Name: "Farmacy",
-        Floors_Num: null,
-        Building_U: "",
-        Staff_Numb: null,
-        Student_Nu: null,
-        Dean_Name: "",
+        code: "B8",
+        name: "Farmacy",
+        floorsNumber: null,
+        buidlingUse: "Academic",
+        staffNumber: null,
+        studentsNumber: null,
+        deanName: "Ahmad Amro",
+        imgSrc: null,
         SHAPE_Leng: 85.015926,
         SHAPE_Area: 451.506445
       }
@@ -170,13 +172,14 @@ var areas = {
       },
       properties: {
         OBJECTID: 12,
-        Code: "B7",
-        Name: "Health Professions",
-        Floors_Num: null,
-        Building_U: "",
-        Staff_Numb: null,
-        Student_Nu: null,
-        Dean_Name: "",
+        code: "B7",
+        name: "Health Professions",
+        floorsNumber: null,
+        buidlingUse: "Academic",
+        staffNumber: null,
+        studentsNumber: null,
+        deanName: "Rania Abu Sir",
+        imgSrc: "assets/health-professions.jpg",
         SHAPE_Leng: 89.461715,
         SHAPE_Area: 499.546181
       }
@@ -211,13 +214,14 @@ var areas = {
       },
       properties: {
         OBJECTID: 13,
-        Code: "B6",
-        Name: "Said Khoury - IT",
-        Floors_Num: 2,
-        Building_U: "Support",
-        Staff_Numb: 25,
-        Student_Nu: 0,
-        Dean_Name: "NA",
+        code: "B6",
+        name: "Said Khoury - IT",
+        floorsNumber: 2,
+        buidlingUse: "Support",
+        staffNumber: 25,
+        studentsNumber: 0,
+        deanName: null,
+        imgSrc: "assets/it.jpg",
         SHAPE_Leng: 189.458428,
         SHAPE_Area: 1335.219182
       }
@@ -241,13 +245,14 @@ var areas = {
       },
       properties: {
         OBJECTID: 14,
-        Code: "B5",
-        Name: "AlQuds Bard College",
-        Floors_Num: 3,
-        Building_U: "Academic",
-        Staff_Numb: 30,
-        Student_Nu: 280,
-        Dean_Name: "Daniel Terris",
+        code: "B5",
+        name: "AlQuds Bard College",
+        floorsNumber: 3,
+        buidlingUse: "Academic",
+        staffNumber: 30,
+        studentsNumber: 280,
+        deanName: "Daniel Terris",
+        imgSrc: "assets/aqb.jpg",
         SHAPE_Leng: 124.508038,
         SHAPE_Area: 770.599813
       }
@@ -282,13 +287,14 @@ var areas = {
       },
       properties: {
         OBJECTID: 15,
-        Code: "B4",
-        Name: "Science Faculty",
-        Floors_Num: 3,
-        Building_U: "Academic",
-        Staff_Numb: 50,
-        Student_Nu: 500,
-        Dean_Name: "NA",
+        code: "B4",
+        name: "Science & Technology",
+        floorsNumber: 3,
+        buidlingUse: "Academic",
+        staffNumber: 50,
+        studentsNumber: 500,
+        deanName: "Mohammad Abu Haj",
+        imgSrc: "assets/sandt.jpeg",
         SHAPE_Leng: 473.679797,
         SHAPE_Area: 4001.388971
       }
@@ -310,13 +316,14 @@ var areas = {
       },
       properties: {
         OBJECTID: 16,
-        Code: "B2",
-        Name: "Mosque",
-        Floors_Num: 1,
-        Building_U: "relegious",
-        Staff_Numb: 0,
-        Student_Nu: 0,
-        Dean_Name: "NA",
+        code: "B2",
+        name: "Mosque",
+        floorsNumber: 1,
+        buidlingUse: "relegious",
+        staffNumber: 0,
+        studentsNumber: 0,
+        deanName: null,
+        imgSrc: null,
         SHAPE_Leng: 85.982521,
         SHAPE_Area: 455.84581
       }
@@ -342,13 +349,14 @@ var areas = {
       },
       properties: {
         OBJECTID: 17,
-        Code: "B3",
-        Name: "Finance Building",
-        Floors_Num: 2,
-        Building_U: "Financial",
-        Staff_Numb: 20,
-        Student_Nu: 0,
-        Dean_Name: "NA",
+        code: "B3",
+        name: "Finance Building",
+        floorsNumber: 2,
+        buidlingUse: "Financial",
+        staffNumber: 20,
+        studentsNumber: 0,
+        deanName: null,
+        imgSrc: null,
         SHAPE_Leng: 92.380162,
         SHAPE_Area: 529.87751
       }
@@ -369,13 +377,14 @@ var areas = {
       },
       properties: {
         OBJECTID: 18,
-        Code: "B13",
-        Name: "Library",
-        Floors_Num: null,
-        Building_U: "",
-        Staff_Numb: null,
-        Student_Nu: null,
-        Dean_Name: "",
+        code: "B13",
+        name: "Library",
+        floorsNumber: null,
+        buidlingUse: "Library",
+        staffNumber: null,
+        studentsNumber: null,
+        deanName: null,
+        imgSrc: "assets/library.jpeg",
         SHAPE_Leng: 161.903215,
         SHAPE_Area: 1585.408421
       }
@@ -397,13 +406,14 @@ var areas = {
       },
       properties: {
         OBJECTID: 19,
-        Code: "B12",
-        Name: "Graduate Studies",
-        Floors_Num: null,
-        Building_U: "",
-        Staff_Numb: null,
-        Student_Nu: null,
-        Dean_Name: "",
+        code: "B12",
+        name: "Educational Sciences",
+        floorsNumber: null,
+        buidlingUse: "",
+        staffNumber: null,
+        studentsNumber: null,
+        deanName: "Mahmoud Abu Samra",
+        imgSrc: "assets/edu.jpeg",
         SHAPE_Leng: 194.321737,
         SHAPE_Area: 1565.245166
       }
@@ -451,13 +461,14 @@ var areas = {
       },
       properties: {
         OBJECTID: 21,
-        Code: "B15",
-        Name: "Faculty of Ats",
-        Floors_Num: null,
-        Building_U: "",
-        Staff_Numb: null,
-        Student_Nu: null,
-        Dean_Name: "",
+        code: "B15",
+        name: "Faculty of Ats",
+        floorsNumber: null,
+        buidlingUse: "Academic",
+        staffNumber: null,
+        studentsNumber: null,
+        deanName: "Mashhour Al-Habazzi",
+        imgSrc: "assets/arts.jpg",
         SHAPE_Leng: 266.719123,
         SHAPE_Area: 1585.168404
       }
@@ -486,13 +497,14 @@ var areas = {
       },
       properties: {
         OBJECTID: 22,
-        Code: "B14",
-        Name: "Student Activities",
-        Floors_Num: null,
-        Building_U: "",
-        Staff_Numb: null,
-        Student_Nu: null,
-        Dean_Name: "",
+        code: "B14",
+        name: "Student Activities",
+        floorsNumber: null,
+        buildingUse: "Resources",
+        staffNumber: null,
+        studentsNumber: null,
+        deanName: null,
+        imgSrc: null,
         SHAPE_Leng: 177.48759,
         SHAPE_Area: 1775.561491
       }
@@ -524,13 +536,14 @@ var areas = {
       },
       properties: {
         OBJECTID: 23,
-        Code: "B1",
-        Name: "Outer northern grandstand",
-        Floors_Num: 0,
-        Building_U: "Stadium",
-        Staff_Numb: 0,
-        Student_Nu: 0,
-        Dean_Name: "NA",
+        code: "B1",
+        name: "Outer northern grandstand",
+        floors_Num: null,
+        buidlingUse: "Stadium",
+        staffNumber: 0,
+        studentsNumber: 0,
+        deanNme: "N/A",
+        imgSrc: "assets/grand-stand.jpg",
         SHAPE_Leng: 234.956579,
         SHAPE_Area: 2825.6707
       }
@@ -556,13 +569,14 @@ var areas = {
       },
       properties: {
         OBJECTID: 25,
-        Code: "B16",
-        Name: "Law Faculty",
-        Floors_Num: null,
-        Building_U: "",
-        Staff_Numb: null,
-        Student_Nu: null,
-        Dean_Name: "",
+        code: "B16",
+        name: "Law Faculty",
+        floorsNumber: null,
+        buildingUse: "Academic",
+        staffNumber: null,
+        studentsNumber: null,
+        deanName: "Issa Manasrah",
+        imgSrc: "assets/law.jpeg",
         SHAPE_Leng: 209.867215,
         SHAPE_Area: 1206.428258
       }
@@ -589,13 +603,14 @@ var areas = {
       },
       properties: {
         OBJECTID: 27,
-        Code: "B18",
-        Name: "Abu Jihad",
-        Floors_Num: null,
-        Building_U: "",
-        Staff_Numb: null,
-        Student_Nu: null,
-        Dean_Name: "",
+        code: "B18",
+        name: "Abu Jihad",
+        floorsNumber: null,
+        buidlingUse: "Academic",
+        staffNumber: null,
+        studentsNumber: null,
+        deanName: null,
+        imgSrc: "assets/abujihad.jpg",
         SHAPE_Leng: 133.125813,
         SHAPE_Area: 1004.56017
       }
@@ -625,13 +640,14 @@ var areas = {
       },
       properties: {
         OBJECTID: 28,
-        Code: "B19",
-        Name: "Institue of Archeology",
-        Floors_Num: null,
-        Building_U: "",
-        Staff_Numb: null,
-        Student_Nu: null,
-        Dean_Name: "",
+        code: "B19",
+        name: "Institue of Archeology",
+        floorsNumber: null,
+        buildingUse: "Academic",
+        staffNumber: null,
+        studentsNumber: null,
+        deanName: null,
+        imgSrc: null,
         SHAPE_Leng: 97.601369,
         SHAPE_Area: 327.629945
       }
@@ -655,13 +671,14 @@ var areas = {
       },
       properties: {
         OBJECTID: 29,
-        Code: "B17",
-        Name: "Development",
-        Floors_Num: null,
-        Building_U: "",
-        Staff_Numb: null,
-        Student_Nu: null,
-        Dean_Name: "",
+        code: "B17",
+        name: "Development",
+        floorsNumber: null,
+        buidlingUse: "Academic",
+        staffNumber: null,
+        studentsNumber: null,
+        deanName: null,
+        imgSrc: null,
         SHAPE_Leng: 100.527087,
         SHAPE_Area: 496.107514
       }
@@ -693,13 +710,14 @@ var areas = {
       },
       properties: {
         OBJECTID: 32,
-        Code: "B20",
-        Name: "Math Musuem",
-        Floors_Num: null,
-        Building_U: "",
-        Staff_Numb: null,
-        Student_Nu: null,
-        Dean_Name: "",
+        code: "B20",
+        name: "Math Musuem",
+        floorsNumber: null,
+        buidlingUse: "musuem",
+        staffNumber: null,
+        studentsNumber: null,
+        deanName: null,
+        imgSrc: null,
         SHAPE_Leng: 87.6527,
         SHAPE_Area: 350.320501
       }
@@ -707,8 +725,10 @@ var areas = {
     {
       type: "Feature",
       properties: {
-        Code: "R1",
-        Name: "Soccer Field"
+        code: "B111",
+        buidlingUse: "Field",
+        name: "Soccer Field",
+        imgSrc: "assets/field.jpeg"
       },
       geometry: {
         coordinates: [
@@ -729,7 +749,7 @@ var areas = {
         type: "Point",
         coordinates: [35.2598512326944, 31.75573517865084]
       },
-      properties: { OBJECTID: 1, Code: "g1", Name: "", Location: "" }
+      properties: { OBJECTID: 1, code: "g1", name: "Gate", location: "" }
     },
     {
       type: "Feature",
@@ -737,7 +757,7 @@ var areas = {
         type: "Point",
         coordinates: [35.25951524377032, 31.754548452434726]
       },
-      properties: { OBJECTID: 2, Code: "g2", Name: "", Location: "" }
+      properties: { OBJECTID: 2, code: "g2", name: "Gate", location: "" }
     },
     {
       type: "Feature",
@@ -745,7 +765,7 @@ var areas = {
         type: "Point",
         coordinates: [35.26069314245627, 31.757435538577234]
       },
-      properties: { OBJECTID: 3, Code: "g3", Name: "", Location: "" }
+      properties: { OBJECTID: 3, code: "g3", name: "Gate", location: "" }
     },
     {
       type: "Feature",
@@ -753,7 +773,7 @@ var areas = {
         type: "Point",
         coordinates: [35.262597857173624, 31.756438807642308]
       },
-      properties: { OBJECTID: 4, Code: "g4", Name: "", Location: "" }
+      properties: { OBJECTID: 4, code: "g4", name: "Gate", location: "" }
     },
     {
       type: "Feature",
@@ -761,16 +781,17 @@ var areas = {
         type: "Point",
         coordinates: [35.259861615654195, 31.755294076647957]
       },
-      properties: { OBJECTID: 5, Code: "g5", Name: "", Location: "" }
+      properties: { OBJECTID: 5, code: "g5", name: "Gate", location: "" }
     },
 
     // open spaces
     {
       type: "Feature",
       properties: {
-        Code: "O1",
-        Type: "Open Space",
-        Name: "un"
+        code: "O1",
+        buidlingUse: "Open Space",
+        name: "Science Fountain",
+        imgSrc: "assets/fountain.jpeg"
       },
       geometry: {
         type: "Polygon",
@@ -849,9 +870,10 @@ var areas = {
     {
       type: "Feature",
       properties: {
-        Code: "O2",
-        Type: "Open Space",
-        Name: "unkown"
+        code: "O2",
+        buidlingUse: "Open Space",
+        name: "Andalusian Garden",
+        imgSrc: "assets/garden.jpeg"
       },
       geometry: {
         coordinates: [
@@ -870,8 +892,10 @@ var areas = {
     {
       type: "Feature",
       properties: {
-        Code: "O3",
-        Type: "open space"
+        code: "O3",
+        buidlingUse: "Open Space",
+        name: "Orange Stall",
+        imgSrc: "assets/orange.jpeg"
       },
       geometry: {
         type: "Polygon",
@@ -950,8 +974,10 @@ var areas = {
     {
       type: "Feature",
       properties: {
-        Code: "O4",
-        Type: "Open space"
+        code: "O3",
+        buidlingUse: "Open Space",
+        name: "Open Space With Trees",
+        imgSrc: null
       },
       geometry: {
         coordinates: [
@@ -973,8 +999,14 @@ var areas = {
     {
       type: "Feature",
       properties: {
-        "Code`": "B??",
-        Name: "Art Faculty"
+        code: "B15",
+        name: "College of Fine Ats",
+        floorsNumber: null,
+        buidlingUse: "Academic",
+        staffNumber: null,
+        studentsNumber: null,
+        deanName: "Ali Erekat",
+        imgSrc: "assets/vocational.jpg"
       },
       geometry: {
         coordinates: [
@@ -993,8 +1025,14 @@ var areas = {
     {
       type: "Feature",
       properties: {
-        Code: "B???",
-        Name: "Engineering"
+        code: "B?",
+        name: "Engineering",
+        floorsNumber: null,
+        buidlingUse: "Academic",
+        staffNumber: null,
+        studentsNumber: null,
+        deanName: "Yara Saifi",
+        imgSrc: "assets/eng.jpeg"
       },
       geometry: {
         coordinates: [
@@ -1016,8 +1054,14 @@ var areas = {
     {
       type: "Feature",
       properties: {
-        Code: "B???",
-        Name: "Engineering"
+        code: "B?",
+        name: "Engineering",
+        floorsNumber: null,
+        buidlingUse: "Academic",
+        staffNumber: null,
+        studentsNumber: null,
+        deanName: "Yara Saifi",
+        imgSrc: "assets/eng.jpeg"
       },
       geometry: {
         coordinates: [
@@ -1039,8 +1083,14 @@ var areas = {
     {
       type: "Feature",
       properties: {
-        Code: "Gym",
-        Name: "Gym"
+        code: "B2111",
+        name: "GYM",
+        floorsNumber: null,
+        buidlingUse: "gym",
+        staffNumber: null,
+        studentsNumber: null,
+        deanName: null,
+        imgSrc: null
       },
       geometry: {
         coordinates: [
@@ -1060,8 +1110,14 @@ var areas = {
     {
       type: "Feature",
       properties: {
-        Code: "B444",
-        Name: "Deen"
+        code: "B5",
+        name: "Daw'a Faculty",
+        floorsNumber: null,
+        buidlingUse: "Academic",
+        staffNumber: 30,
+        studentsNumber: 280,
+        deanName: "Orwa Sabri",
+        imgSrc: "assets/dawa.jpeg"
       },
       geometry: {
         coordinates: [
@@ -1082,8 +1138,9 @@ var areas = {
     {
       type: "Feature",
       properties: {
-        Code: "S1",
-        Name: "University Street"
+        code: "S1",
+        name: "University Street",
+        imgSrc: null
       },
       geometry: {
         coordinates: [

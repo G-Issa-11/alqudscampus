@@ -125,8 +125,29 @@
         let layer = event.target;
         let properties = layer.feature.properties;
 
-        // Display the 'name' property in a popup
-        layer.bindPopup(properties.Name).openPopup();
+        // Create a custom popup with HTML content
+        let popupContent = `
+    <div class="custom-popup">
+        ${
+          properties.imgSrc != null
+            ? `<img style="width:200px; height: auto; margin:0 auto" src="${properties.imgSrc}">`
+            : ""
+        }
+        <div class="description" style="text-align:center; font-size:16px; font-weight: bold">${
+          properties.name
+        }</div>
+        ${
+          properties.deanName != null
+            ? `<div class="description" style="text-align:center; font-size:16px">Dean: ${properties.deanName}</div>`
+            : ""
+        }
+        
+    </div>
+`;
+
+        // Create a popup and bind it to the layer
+        let popup = L.popup().setContent(popupContent);
+        layer.bindPopup(popup).openPopup();
       }
 
       // Function to handle mouseout event
