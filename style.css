@@ -33,7 +33,7 @@ header nav {
   align-items: center;
 }
 
-header nav .logo img {
+header nav .nav-logo img {
   height: 75px;
 }
 
@@ -456,10 +456,9 @@ footer .credentials {
   justify-content: center;
   align-items: center;
 }
-
 /* map */
 
-#map {
+/* #map {
   position: absolute;
   top: 0;
   right: 0;
@@ -467,17 +466,17 @@ footer .credentials {
   height: 100vh;
 }
 
-.logo {
+.alquds-logo {
   position: absolute;
-  top: 0px; /* Adjust as needed to position the logo */
-  right: 130px; /* Adjust as needed to position the logo */
-  z-index: 1000; /* Ensure the logo appears above the map */
+  top: 0px; 
+  right: 130px; 
+  z-index: 1000; 
 }
 
 .logo img {
-  width: 130px; /* Adjust the width of the logo as needed */
-  height: auto; /* Maintain aspect ratio */
-}
+  width: 130px; 
+  height: auto; 
+} */
 
 .info.legend {
   background: white;
@@ -501,8 +500,17 @@ footer .credentials {
 }
 
 @media (max-width: 400px) {
+  body {
+    height: 100vh;
+    overflow: scroll;
+  }
   .logo {
-    position: absolute;
+    position: relative;
+    text-align: center;
+  }
+  .logo img {
+    position: relative;
+    display: inline-block;
     top: 0px;
     right: 50%;
     transform: translateX(50%);
@@ -518,7 +526,7 @@ footer .credentials {
     line-height: 1.2;
   }
   .info.legend i {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
   }
 }

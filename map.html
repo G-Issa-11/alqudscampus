@@ -7,6 +7,27 @@
     <title>AQU Map</title>
     <link rel="stylesheet" href="style.css" />
     <script src="campus-data.js"></script>
+    <style>
+      #map {
+        position: absolute;
+        /* top: 0;
+        right: 0; */
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .logo {
+        position: absolute;
+        top: 0px; /* Adjust as needed to position the logo */
+        right: 130px; /* Adjust as needed to position the logo */
+        z-index: 1000; /* Ensure the logo appears above the map */
+      }
+
+      .logo img {
+        width: 130px; /* Adjust the width of the logo as needed */
+        height: auto; /* Maintain aspect ratio */
+      }
+    </style>
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
