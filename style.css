@@ -89,10 +89,6 @@ main {
 .about {
   padding-top: 140px;
   padding-bottom: 50px;
-  /* display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around; */
   display: grid;
   grid-template-areas: "content carousel  carousel";
   height: 100vh;
@@ -117,22 +113,45 @@ main {
   padding: 10px 8px;
   border-left: 2px solid #b9132a;
   margin-bottom: 30px;
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .about-content p {
   margin-bottom: 30px;
   color: #31363f;
   line-height: 25px;
+  font-size: 20px;
 }
 
-.arrow-button a {
+.arrow-button a,
+.go-btn a {
   color: white;
   font-size: 20px;
   text-decoration: none;
 }
 
-.arrow-button {
+.go-btn {
+  display: inline-block;
+  padding: 10px 20px; /* Increase padding for better button appearance */
+  background: #b9132a;
+  border: 2px solid #b9132a; /* Add border for better contrast */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease; /* Smooth transition */
+}
+
+.go-btn:hover {
+  background-color: #ff6347; /* Darker background color on hover */
+  border-color: #ff6347; /* Darker border color on hover */
+}
+
+.go-btn a:hover {
+  color: white; /* Maintain text color on hover */
+}
+
+/* .arrow-button {
   position: relative;
   margin: 0;
   padding: 14px;
@@ -165,12 +184,13 @@ main {
 .arrow-button:hover::after {
   border-color: transparent transparent transparent #ff6347;
   border-left-color: #ff6347;
-}
+} */
 
 .slideshow-container {
   min-width: 100%;
   position: relative;
   margin: auto;
+  margin-top: 25px;
 }
 
 .mySlides {
@@ -268,7 +288,7 @@ main {
 
 .contact {
   position: relative;
-  padding: 130px 0;
+  padding: 100px 0;
 }
 
 .red-strip {
@@ -535,9 +555,28 @@ footer .credentials {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   header nav .nav-logo img {
     height: 60px;
+  }
+  /* about */
+  .about {
+    padding-top: 90px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-areas:
+      "carousel"
+      "content";
+    height: 100vh;
+  }
+
+  .carousel {
+    padding-top: 0;
+    /* height: 100vh; */
+  }
+
+  .about-content {
+    margin-top: 50px;
   }
 }
 
@@ -598,5 +637,54 @@ footer .credentials {
 
   header .menu .menu-item:hover::after {
     display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-content h1 {
+    font-size: 25px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+    align-items: center;
+  }
+
+  .go-btn a {
+    font-size: 16px;
+  }
+  .go-btn {
+    padding: 5px;
+    width: 100%;
+  }
+
+  .slideshow-container {
+    margin-top: 50px;
+  }
+
+  .red-strip {
+    display: none;
+  }
+  .contact {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    /* padding-top: 50px; */
+  }
+  .contact-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    width: 90%;
   }
 }
