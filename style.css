@@ -75,6 +75,10 @@ header .menu .menu-item:hover::after {
   background-color: #b9132a; /* Change the background color on hover */
 }
 
+.menu-toggle {
+  display: none;
+}
+
 /* Main body styling */
 
 main {
@@ -518,7 +522,7 @@ footer .credentials {
   }
   .info.legend {
     position: absolute;
-    bottom: 10px;
+    bottom: 80px;
     left: 10px;
     width: 90%;
     font-size: 12px;
@@ -528,5 +532,71 @@ footer .credentials {
   .info.legend i {
     width: 10px;
     height: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  header nav .nav-logo img {
+    height: 60px;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu-toggle {
+    display: block;
+    float: right;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+  }
+
+  .menu-toggle i {
+    font-size: 50px;
+  }
+
+  header .menu {
+    display: none; /* Hide the menu by default */
+    position: absolute; /* Position the menu absolutely */
+    top: 100%; /* Position it beneath the bar */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Occupy full width */
+    height: 100vh;
+  }
+
+  .menu.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    border-top: 1px solid #ccc;
+  }
+
+  header .menu .menu-item {
+    list-style-type: none;
+    margin: 0px;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+    position: relative;
+    padding: 20px;
+    font-size: 30px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    text-align: center;
+  }
+
+  header .menu .menu-item a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #222831;
+  }
+  header .menu .menu-item::after {
+    content: "";
+  }
+
+  header .menu .menu-item:hover::after {
+    display: none;
   }
 }

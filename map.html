@@ -9,9 +9,9 @@
     <script src="campus-data.js"></script>
     <style>
       #map {
-        position: absolute;
-        /* top: 0;
-        right: 0; */
+        position: relative;
+        top: 0;
+        right: 0;
         width: 100vw;
         height: 100vh;
       }
@@ -91,23 +91,6 @@
 
       // Add layer control to the map
       L.control.layers(baseLayers).addTo(map);
-
-      //   var geoJsonLayer = L.geoJSON(areas).addTo(map);
-
-      // Function to generate a random color
-      // function getRandomColor() {
-      //   var letters = "0123456789ABCDEF";
-      //   var color = "#";
-      //   for (var i = 0; i < 6; i++) {
-      //     color += letters[Math.floor(Math.random() * 16)];
-      //   }
-      //   return color;
-      // }
-
-      // Iterate through each feature and assign a random color
-      // areas.features.forEach(function(feature) {
-      //   feature.properties.Color = getRandomColor();
-      // });
 
       function assignColor(feature) {
         switch (feature.properties.buildingUse) {

@@ -20,7 +20,13 @@
             ><img src="assets/alquds-uni-logo.png" alt="Al-Quds University Logo"
           /></a>
         </div>
-        <ul class="menu">
+        <button class="menu-toggle" onclick="toggleMenu()">
+          <i
+            class="fa fa-bars fa-3x"
+            style="color: #b9132a; font-size: 35px; outline: none"
+          ></i>
+        </button>
+        <ul class="menu" id="menu">
           <li class="menu-item"><a href="#about">About</a></li>
           <li class="menu-item"><a href="#contact">Contact Us</a></li>
           <li class="menu-item">
@@ -182,5 +188,18 @@
       dots[slideIndex - 1].className += " active";
       setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
+
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      menu.classList.toggle("open");
+    }
+    function closeMenu() {
+      var menu = document.getElementById("menu");
+      menu.classList.remove("open");
+    }
+    var menuItems = document.querySelectorAll(".menu-item a");
+    menuItems.forEach(function(item) {
+      item.addEventListener("click", closeMenu);
+    });
   </script>
 </html>
