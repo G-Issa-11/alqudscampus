@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>AQU Map</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="leaflet-search-master/dist/leaflet-search.src.css"
+    />
     <script src="campus-data.js"></script>
     <style>
       #map {
@@ -40,6 +44,7 @@
       crossorigin=""
     ></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="leaflet-search-master/dist/leaflet-search.src.js"></script>
   </head>
   <body>
     <div class="logo">
@@ -95,11 +100,11 @@
       function assignColor(feature) {
         switch (feature.properties.buildingUse) {
           case "Open Space":
-            return "orange";
+            return "green";
           case "street":
             return "black";
           default:
-            return "red";
+            return "orange";
         }
       }
 
@@ -195,15 +200,23 @@
       function getColor(category) {
         switch (category) {
           case "Acadmic or Resources Building":
-            return "red";
-          case "Open Space":
             return "orange";
+          case "Open Space":
+            return "green";
           case "Street":
             return "black";
           default:
             return "grey"; // default color if category is not matched
         }
       }
+
+      // add search
+      const searchControl = new L.control.search({
+        layer: geoJsonLayer,
+        propertyName: "name"
+      });
+      console.log(searchControl);
+      map.addControl(searchControl);
     </script>
   </body>
 </html>
