@@ -18,12 +18,20 @@ body {
 /* Nav bar & header styling */
 
 header {
-  position: fixed;
+  position: absolute;
   width: 100%;
   padding: 12px 25px;
-  background-color: #fff;
+  background-color: #b9132a;
   box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.2);
   z-index: 1000;
+  height: 75px;
+}
+
+header svg {
+  position: absolute;
+  width: 100%;
+  top: 70px;
+  left: 0;
 }
 
 header nav {
@@ -31,10 +39,11 @@ header nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 80px;
 }
 
 header nav .nav-logo img {
-  height: 75px;
+  /* height: 70px; */
 }
 
 header .menu {
@@ -53,10 +62,10 @@ header .menu .menu-item {
 }
 
 header .menu .menu-item a {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   text-decoration: none;
-  color: #222831;
+  color: #fff;
 }
 
 header .menu .menu-item::after {
@@ -72,7 +81,7 @@ header .menu .menu-item::after {
 
 header .menu .menu-item:hover::after {
   width: 100%;
-  background-color: #b9132a; /* Change the background color on hover */
+  background-color: #fff; /* Change the background color on hover */
 }
 
 .menu-toggle {
@@ -83,15 +92,20 @@ header .menu .menu-item:hover::after {
 
 main {
   position: relative;
+  padding-top: 50px;
 }
 
 /* About section styling */
 .about {
-  padding-top: 140px;
-  padding-bottom: 50px;
-  display: grid;
-  grid-template-areas: "content carousel  carousel";
+  /* position: relative; */
+  /* padding-top: 100px; */
+  /* padding-bottom: 50px; */
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
 }
 
 .about > div {
@@ -99,6 +113,9 @@ main {
 }
 
 .about-content {
+  grid-area: "about";
+  position: relative;
+  width: 100%;
   grid-area: content;
   display: flex;
   flex-direction: column;
@@ -108,6 +125,7 @@ main {
 
 .carousel {
   grid-area: carousel;
+  width: 100%;
 }
 .about-content h1 {
   padding: 10px 8px;
@@ -151,41 +169,6 @@ main {
   color: white; /* Maintain text color on hover */
 }
 
-/* .arrow-button {
-  position: relative;
-  margin: 0;
-  padding: 14px;
-  background: #b9132a;
-  border: none;
-  height: 70px;
-  text-align: center;
-  cursor: pointer;
-  transition: 0.3s ease-in;
-}
-
-.arrow-button::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  right: -70px;
-  border-width: 35px;
-  border-color: transparent transparent transparent #b9132a;
-  border-left-color: #b9132a;
-  transition: 0.3s ease-in;
-}
-
-.arrow-button:hover {
-  background-color: #ff6347;
-}
-
-.arrow-button:hover::after {
-  border-color: transparent transparent transparent #ff6347;
-  border-left-color: #ff6347;
-} */
-
 .slideshow-container {
   min-width: 100%;
   position: relative;
@@ -205,35 +188,6 @@ main {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
     rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
     rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* The dots/bullets/indicators */
@@ -267,22 +221,6 @@ main {
     opacity: 1;
   }
 }
-
-/* students contributions section */
-/* .students-eyes {
-  background-color: #eee;
-  width: 100%;
-  height: 400px;
-  padding: 30px 0px;
-}
-
-.inside {
-  background-color: #eee;
-  width: 100%;
-  height: 330px;
-  border-top: 15px solid #fff;
-  border-bottom: 15px solid #fff;
-} */
 
 /* Contact section styling */
 
@@ -563,20 +501,21 @@ footer .credentials {
   .about {
     padding-top: 90px;
     padding-bottom: 50px;
-    display: grid;
-    grid-template-areas:
-      "carousel"
-      "content";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
   }
 
   .carousel {
     padding-top: 0;
-    /* height: 100vh; */
+    /* width: 100%; */
   }
 
   .about-content {
     margin-top: 50px;
+    /* width: 100%; */
   }
 }
 
@@ -601,6 +540,9 @@ footer .credentials {
     left: 0; /* Align it to the left */
     width: 100%; /* Occupy full width */
     height: 100vh;
+  }
+  .fa-university::before {
+    color: #b9132a;
   }
 
   .menu.open {
