@@ -215,8 +215,17 @@
         layer: geoJsonLayer,
         propertyName: "name"
       });
-      console.log(searchControl);
       map.addControl(searchControl);
+
+      // add north arrow
+      var north = L.control({ position: "topleft" });
+      north.onAdd = function(map) {
+        var div = L.DomUtil.create("div", "north-arrow");
+        // div.classList.add("north-arrow");
+        div.innerHTML = '<img style="width: 100%" src="assets/northarrow.png">';
+        return div;
+      };
+      north.addTo(map);
     </script>
   </body>
 </html>
