@@ -177,18 +177,26 @@
         var categories = [
           "Acadmic or Resources Building",
           "Open Space",
-          "Street"
+          "Street",
+          "Gate"
         ];
 
         div.innerHTML = labels.join("<br>");
 
         for (var i = 0; i < categories.length; i++) {
-          div.innerHTML +=
-            '<i style="background:' +
-            getColor(categories[i]) +
-            '; width: 18px; height: 18px; display: inline-block; margin-right: 5px; border-radius: 50%"></i> ' +
-            categories[i] +
-            "<br>";
+          if (categories[i] === "Gate") {
+            div.innerHTML +=
+              '<img src="assets/marker-blue.png" style="width: 18px; height: 18px; display: inline-block; margin-right: 5px; border-radius: 50%"> ' +
+              categories[i] +
+              "<br>";
+          } else {
+            div.innerHTML +=
+              '<i style="background:' +
+              getColor(categories[i]) +
+              '; width: 18px; height: 18px; display: inline-block; margin-right: 5px; border-radius: 50%"></i> ' +
+              categories[i] +
+              "<br>";
+          }
         }
 
         return div;
